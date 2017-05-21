@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget_file.xsd">
+    <widget id="products_list">
+        <label translate="true">Catalog Products List</label>
+        <description translate="true">List of Products</description>
+        <parameters>
+            <parameter name="template" xsi:type="select">
+                <label translate="true">Template</label>
+                <options>
+                    <option name="option_id" value="Ecommerce121_FlexProductGrid::view/frontend/product/widget/content/grid.phtml">
+                        <label translate="true">Flex Grid</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+        <containers>
+            <container name="content">
+                <template name="slider" value="slider" />
+            </container>
+            <container name="content.top">
+                <template name="slider" value="slider" />
+            </container>
+            <container name="content.bottom">
+                <template name="slider" value="slider" />
+            </container>
+        </containers>
+    </widget>
+</widgets>
